@@ -1,0 +1,10 @@
+# Ignore Everything
+*
+
+# Except these
+!*.tex
+!*.sty
+!.gitignore
+!Imgs
+!Imgs/*
+!Imgs/

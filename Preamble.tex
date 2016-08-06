@@ -1,0 +1,71 @@
+%- Preamble - Age - Article --
+
+
+\documentclass{article}
+
+%-------- Include Packages -----------
+\usepackage{graphics}
+\usepackage{wrapfig}
+\usepackage{xcolor} % For colouring hyperlinks
+\usepackage{tikz}
+\usepackage[colorlinks=true,linkcolor={red!80!black},citecolor={blue!50!black},urlcolor={blue!80!black}]{hyperref}
+\usepackage{tikz-3dplot}
+% -- Math Related -------------------
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{mathrsfs} 	% Curly Math text for Lagrangians
+\usepackage{esvect} 	% Allows vector arrow superscripts	
+%----------- Particle Physics --------
+\usepackage{feynmp-auto}
+% ---------------- -------------------
+%------- Custom Environments --------
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\secref}[1]{[\ref{#1}]}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\abox}[1]{\vspace{0.3cm} \fbox{\addtolength{\linewidth}{-2\fboxsep} \addtolength{\linewidth}{-2\fboxrule} \begin{minipage}{\linewidth}#1 \end{minipage}}\vspace{0.3cm}}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+%------------------------------------
+
+%----------Custom Variables ---------
+% Define File Paths
+\graphicspath{{Imgs/}}
+\def \RefPath {../../References/}
+\def \ImagePath {./Images/}
+%------------------------------------
+%-------- Page Typesetting -----------
+\textwidth 17 truecm 
+\textheight 23.5 truecm 
+\topmargin -2 truecm 
+\oddsidemargin -.2 truecm 
+
+
+%------------Formatting --------------
+% Remove Indenting
+%\setlength{\parindent}{0cm}
+% Change height of tables
+\renewcommand{\arraystretch}{1.2}
+
+%--------- Custom Settings -----------
+%-------------------------------------
+
+%--------- Title/Author --------------
+
+
+%\title{}
+
+%-------------------------------------
+
+
+
+%\begin{document}
+
+
+
+
+%\bibliographystyle{plain}
+% \bibliography{../../../References/General, ../../../References/SUSY} %For vim-latex auto-completion
+%\bibliography{\RefPath General \RefPath SUSY}
+
+%\end{document}
