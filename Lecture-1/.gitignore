@@ -4,6 +4,7 @@
 # Except these
 !*.tex
 !*.sty
+!*.pdf
 !.gitignore
 !Imgs
 !Imgs/*
