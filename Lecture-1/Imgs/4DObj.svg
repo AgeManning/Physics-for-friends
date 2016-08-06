@@ -16,7 +16,10 @@
    id="svg4200"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="4DObj.svg">
+   sodipodi:docname="4DObj.svg"
+   inkscape:export-filename="/home/age/DataCloud/Projects/Physics-for-friends/Lecture-1/Imgs/4dObj.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="307.411"
-     inkscape:cy="594.28242"
+     inkscape:zoom="2.8"
+     inkscape:cx="161.65947"
+     inkscape:cy="609.92699"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -364,26 +367,26 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       x="463.54681"
-       y="526.82556"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87453461px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       x="443.91312"
+       y="524.44531"
        id="text5601"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5603"
-         x="463.54681"
-         y="526.82556">3D Space</tspan></text>
+         x="443.91312"
+         y="524.44531">3D Space</tspan></text>
     <text
        xml:space="preserve"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       x="120"
-       y="316.29077"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.43947983px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       x="121.48248"
+       y="318.4281"
        id="text5605"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5607"
-         x="120"
-         y="316.29077">Time</tspan></text>
+         x="121.48248"
+         y="318.4281">Time</tspan></text>
     <g
        id="g5669"
        transform="matrix(0.28984888,0,0,0.28984888,217.89815,435.9343)">
@@ -450,7 +453,7 @@
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <g
        id="g5964"
-       transform="matrix(0.33174112,0,0,0.33174112,7.6442144,397.71241)">
+       transform="matrix(0.26313166,0,0,0.26313166,30.831352,421.04977)">
       <g
          id="g5966"
          transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
@@ -474,7 +477,7 @@
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <g
        id="g6122"
-       transform="matrix(0.27317245,0,0,0.27317245,27.200125,335.27815)">
+       transform="matrix(0.30926118,0,0,0.30926118,16.395076,321.58652)">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -498,7 +501,7 @@
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <g
        id="g6288"
-       transform="matrix(0.28279896,0,0,0.28279896,23.812849,243.87742)">
+       transform="matrix(0.26023418,0,0,0.26023418,32.022751,250.16341)">
       <g
          id="g6290"
          transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"

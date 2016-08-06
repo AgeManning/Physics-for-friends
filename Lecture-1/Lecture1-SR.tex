@@ -73,7 +73,7 @@ we will be using the expression for gamma throughout these notes
 \begin{equation}
   \gamma(v) = \frac{1}{\sqrt{1 - v^2/c^2}}
 \end{equation}
-which is a number that is always bigger that 1. (Convince yourself of this fact). 
+which is a number that is always bigger than 1. (Convince yourself of this fact). 
 
 
 \subsubsection{Random Maths}
@@ -88,12 +88,12 @@ The binomial expansion, (we will be using this later). You can take my word for 
 
 \subsection{Two Points - Two People}
 
-Consider a 1-Dimensional object. In this example we will use a pencil. How do we measure its length?, or represent it's length mathematically?. The typical procedure is to set up, what is known as a coordinate system. I.e we pick some arbitrary 0 point and make some arbitrary length tick marks, on an axis, ie x=1, x=2 and so on. Then we would say at some point, $x_0$, our object starts and at some point $x_1$ the object ends. See for example Figure \ref{fig:pp}. 
+Consider a 1-Dimensional object. In this example we will use a pencil. How do we measure its length? or represent it's length mathematically? The typical procedure is to set up, what is known as a coordinate system. I.e we pick some arbitrary 0 point and make some arbitrary length tick marks, on an axis, ie x=1, x=2 and so on. Then we would say at some point, $x_0$, our object starts and at some point $x_1$ the object ends. See for example Figure \ref{fig:pp}. 
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{2points.png}
-  \caption{Two points, used to specify the width of some object}
+  \caption{Two points, used to specify the length of some object}
   \label{fig:pp}
 \end{figure}
 
@@ -101,11 +101,11 @@ So its trivial that we then calculate the length to be $x_1 - x_0$. The more sub
 
 Let me illustrate with an example. \\
 
-Two people, Mehdi and Luke measure the length of this pencil. Mehdi sets up his coordinate system by picking his origin (the 0 point) at his house (30km's away from the pencil). He then sets his tickmarks to be 1km apart. With this system $x_0 = 30$ km's (the start of the pencil) and $x_1 = 30.01$ km's (the end).  He can calculate its length, $x_1 - x_0 = 0.01$ kms $ = 10$cm. Simple. 
+Two people, Mehdi and Luke measure the length of this pencil. Mehdi sets up his coordinate system by picking his origin (the 0 point) at his house (30km's away from the pencil). He then sets his tickmarks to be 1km apart. With this system $x_0 = 30$ km's (the start of the pencil) and $x_1 = 30.0001$ km's (the end).  He can calculate its length, $x_1 - x_0 = 0.0001$ kms $ = 10$cm. Simple. 
 
 Now Luke does the same trivial experiment. He sets his origin $1$cm away from the pencil. His tickmarks are in cm's. Therefore his $x_0 = 1$cm and $x_1 = 11$cm. He measures the length as 10cm, which is obviously the same as Mehdi's measurement. 
 
-So whats the point of this?. The point I'm trying to make is: The points representing the object are arbitrary (it depends on how you set up the co-ordinate system). Luke and Mehdi could argue over the number that is $x_0$, because they measure different numbers, but the value that they measure that is the same, is the length $x_0 - x_1$, i.e the length is independent of how you pick your co-ordinates. We call this an ``invariant''. 
+So whats the point of this? The point I'm trying to make is: The points representing the object are arbitrary (it depends on how you set up the co-ordinate system). Luke and Mehdi could argue over the number that is $x_0$, because they measure different numbers, but the value that they measure that is the same, is the length $x_0 - x_1$, i.e the length is independent of how you pick your co-ordinates. We call this an ``invariant''. 
 
 \abox{~\\
   \textbf{Important Concept:} There are properties of objects, such as length, which all ``observers'' measure independent of how they set up their coordinate systems. These are called \textbf{invariants}. Notice that length doesn't have direction. It is a scalar quantity (just a number), this is true for the invariants I will be discussing}
@@ -145,7 +145,7 @@ So whats the point of this?. The point I'm trying to make is: The points represe
 \label{fig:2dvec}
 \end{figure}
 
-We will now use the notation, $ds$ to represent the length of this vector. It should hopefully be obvious that our length in 2 Dimensions is
+We will now use the notation, $ds$ to represent the length of this vector. It should be obvious (through Pythagoras theorem - google it if you don't know) that our length in 2 Dimensions is
 \begin{equation}
   ds^2 = dx^2 + dy^2
 \end{equation}
@@ -155,26 +155,26 @@ Now regardless of where you set your origin, or how you measure your individual 
 
 So what about 3 dimensions\ldots 
 
-I'm not going to draw another picture, but if we add a z-component, can you guess what the length of a 3-component object/vector is?. I'll save you the suspense. Its
+I'm not going to draw another picture, but if we add a z-component, can you guess what the length of a 3-component object/vector is? I'll save you the suspense. Its
 
 \begin{equation}
   ds^2 = dx^2 + dy^2 + dz^2
 \end{equation}
 
-Ok, so what? We all know this right? Why spend two pages with trivialities?. Well things are about to get more complicated, lets jump right into it. 
+Ok, so what? We all know this right? Why spend two pages with trivialities? Well things are about to get more complicated, lets jump right into it. 
 
 \subsection{Time as a spatial dimension?}
 
 So we all live in a 3-D world right? Left, right, up down, forward and back. So what about time? Is it its own animal or is it like a space dimension. The answer is both. \\
 
-We are going to now treat time, sort of like a spatial dimension. So how do we do this. First I want to introduce, not the mathematical picture, but an intuitive picture. If time is now a standard dimension, like space, then we no longer have just 3 dimensional objects, we have 4 dimensional objects. So ok, how do we visualize a 4 dimension object?. Lets imagine that pencil we started with, in 1 Dimension. Now, if we wanted to, we could see how it changes along its 1 dimensional axis by taking cross sections. i.e at $x_0$ we see the tip of the pencil, at $x_0+ \delta x$ (a little bit after $x_0$) we would see the head of the pencil and so on up until $x_1$ where we see the end of the pencil. If we added up all the cross sections, we would recover our image of the entire pencil in its 1 dimension. We can do the same with time. 
+We are going to now treat time, sort of like a spatial dimension. So how do we do this. First I want to introduce, not the mathematical picture, but an intuitive picture. If time is now a standard dimension, like space, then we no longer have just 3 dimensional objects, we have 4 dimensional objects. So ok, how do we visualize a 4 dimension object? Lets imagine that pencil we started with, in 1 Dimension. Now, if we wanted to, we could see how it changes along its 1 dimensional axis by taking cross sections. i.e at $x_0$ we see the tip of the pencil, at $x_0+ \delta x$ (a little bit after $x_0$) we would see the head of the pencil and so on up until $x_1$ where we see the end of the pencil. If we added up all the cross sections, we would recover our image of the entire pencil in its 1 dimension. We can do the same with time. 
 
-Consider our same pencil. It starts of yellow, then Mehdi comes along later at time $t_1=10$mins and paints it green. Then at $t_2=20$mins Luke decides he likes red and paints it Red. How does the 4-Dimensional pencil look like? Well, as in the 1-Dimensional case, we can take cross sections and add them up. \textbf{Read this carefully:} We take 3-Dimensional cross sections of the 4 Dimensional object. Like we took 1 dimensional cross sections of the 2 dimensional pencil. So each 3D cross section represents one point in time. As we add up all the cross sections we get an image of the 4 Dimensional object. Let me illustrate with Figure \ref{fig:4dobj}. 
+Consider our same pencil. It starts of yellow, then Mehdi comes along later at time $t_1=10$mins and paints it green. Then at $t_2=20$mins Luke decides he likes red and paints it Red. How does the 4-Dimensional pencil look like? Well, as in the 1-Dimensional case, we can take cross sections and add them up. \textbf{Read this carefully:} We take 3-Dimensional cross sections of the 4 Dimensional object. Like we took 1 dimensional cross sections of the pencil. So each 3D cross section represents one point in time. As we add up all the cross sections we get an image of the 4 Dimensional object. Let me illustrate with Figure \ref{fig:4dobj}. 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=15cm]{4dObj.png}
-\caption{Cross-sectional representation of a 4-Dimensional Pencil}
+\caption{Cross-sectional representation of a 4-Dimensional Pencil. The curvy lines in total represent the 4-Dimensional pencil and the different coloured pencils are just 3 Dimensional cross-sections at given time points of the 4-dimension pencil.}
 \label{fig:4dobj}
 \end{figure}
 
@@ -186,14 +186,14 @@ So now that we are dealing with 4D objects, we need to extend our notation. The 
 
 Things to note. Greek indicies represent the range from 0-3, i.e 4-components. The 0'th component is the time component. The 1st component is x-component, the second is y-component and third is the z-component. Notice again the latin indices represents 1 to 3, i.e $x^i = (x^1, x^2, x^3)$ and represents our usual 3 vector. \textbf{Important:} The indicies do not represent powers, but a labelling. \\
 
-So now we can represent any point in space and time, but a single 4-vector, $x^{\mu}$. (Make sure you understand this). Now from high-school, or things known as Einsteins postulates, we know that there exists things called reference frames and time dilation and length contraction. Now if you recall, people in different reference frames, measure time, and space differently. Reference frames differ by their relative velocities. Let me explain in less technical terms. \\
+So now we can represent any point in space and time, by a single 4-vector, $x^{\mu}$. (Make sure you understand this). Now from high-school, or things known as Einsteins postulates, we know that there exists things called reference frames and time dilation and length contraction. Now if you recall, people in different reference frames, measure time, and space differently. Reference frames differ by their relative velocities. Let me explain in less technical terms. \\
 
-Luke, travelling at 10 m/s relative to Mehdi, when he sets up his co-ordinate system, will measure time and space differently to Mehdi. In the same way when he chose a 0 for his co-ordinate space, he would measure a different $x_0$ relative to Mehdi who picked a different origin. So what we find, is the vector components of $x^\mu$, i.e $x^0$, $x^1$ etc are different for people who travel at different speeds to each other. (Is this really different from what we expect? The same as $x_0$ and $x_1$ is different for different co-ordinate systems). So the question you've got to be asking yourself, if I have a 4D object, do different reference frames also measure different 4-Dimensional lengths?
+As an example, consider Luke who is travelling at 10 m/s relative to Mehdi. When he sets up his co-ordinate system, he will measure time (duration) and space (length) for events differently to what Mehdi will measure. In a similar way when he chose a different 0 for his co-ordinate space, he would measure a different $x_0$ relative to Mehdi who picked an alternative origin. So what we find in the 4-vector version, is that the vector components of $x^\mu$, i.e $x^0$, $x^1$ etc are different for people who travel at different speeds to each other. (Is this really different from what we expect? The same as $x_0$ and $x_1$ is different for different co-ordinate systems). So the question you've got to be asking yourself, if I have a 4D object, do different reference frames also measure different 4-Dimensional lengths?
 
 \abox{\textbf{Food for thought (non-essential)} \\ You know that travelling at different velocities means you measure time and space differently. Thats fine. But what if I were to ask you, what is your velocity right now? What answer would you give? Would you say 0? If so, would you then remember that actually you're on a planet spinning around a sun. Then change your answer to the speed of earth around the sun? But then remember wait a second, the sun is part of a galaxy, and the sun itself is rotating around a black hole in the Milkyway? But then remember the galaxy itself has a velocity.. and so on. So what is your velocity? Is it any of these? all of these? \\
 There is no such thing as absolute velocity, it doesn't make sense. The only thing you can measure is a velocity relative to something. You need to pick a 0 point (the same as setting up your coordinate system) and say relative to that point, my velocity is $x$. Hence 4-Vectors can only really be defined relative to something or someone. Hence the term ``relativity'' in special and general relativity}
 
-So, as it turns out, regardless of reference frames, the length of a 4-vector is an invariant. I.e regardless of your velocity, all people well measure the length of a 4-object and will not dispute it. They may individually dispute the time (duration) of an event/object or its length, but they will always agree on length. (Hopefully you can now see why I spent time on the 1D case). The length, $ds$,  of a 4-D object is:
+So, as it turns out, regardless of reference frames, the length of a 4-vector is an invariant. I.e regardless of your velocity, all people well measure the length of a 4-object and will not dispute it. They may individually dispute the time (duration) of an event/object or its spatial length, but they will always agree on its 4 dimensional length, $ds$. (Hopefully you can now see why I spent time on the 1D case). The 4D-length, $ds$,  of a 4-D object is:
 
 \abox{
 \begin{equation}
@@ -204,7 +204,7 @@ So, as it turns out, regardless of reference frames, the length of a 4-vector is
 
 So, what have we discovered? Time is like a spatial dimension, except its length adds negatively to the total length of a 4D object!?!?!. This is why time behaves differently to space, and is the definition of a temporal dimension. Notice also there's a 'c' (speed of light) that goes with the time dimension. I wont go into this, but its there because time is typically measured in seconds and we need to compare it meters. (Ask me if your interested in this). 
 
-One final thing I want to stress. A vector has direction, so does a 4-vector (i.e direction in time and 3-space). Length is a scalar. It has no direction. We know that the length is an invariant (all observers measure the same value), in fact if you can form a scalar from a vector, that scalar will be an invariant. To put this is more plain terms: Every person walking around doing their thing, measures times and lengths with respect to themselves (or their reference frames), they get shocked when they compare their measurements with their friends, because their friends will measure/see different values. Both friends are measuring vectors, hence their components differ. When they each compute a scalar from their vector measurements, such as length, the result is the same. 
+One final thing I want to stress. A vector has direction, so does a 4-vector (i.e direction in time and 3-space). Length is a scalar. It has no direction. We know that the length is an invariant (all observers measure the same value), in fact if you can form a scalar from a vector, that scalar will be an invariant. To put this is more plain terms: Every person walking around doing their thing, measures times and lengths with respect to themselves (or their reference frames), they get shocked when they compare their measurements with their friends, because their friends will measure/see different values. Both friends are measuring vectors, hence their components differ. When they each compute a scalar from their vector measurements, such as 4-length, the result is the same. 
 
 \abox{\textbf {Detour for the mathematically inclined} \\ How do we get a scalar from a vector? The words scalar product, or dot product may come to mind. The dot product of two vectors is always a scalar. You've probably seen this in 3-space, 
 \begin{equation}
@@ -215,15 +215,15 @@ We notice the result is a scalar. So note, that the length is simply the dot pro
   \mathbf{a} \cdot \mathbf{a} =  a_1^2 + a_2^2 + a_3^2
 \end{equation}
 Can you see the resemblance with eq \eqref{eq:ds}? \\
-The only difference is time doesn't add, but subtract. The length is the dot product of a position vector with itself. We will look at one more important vector later.
+The only difference is time doesn't add, but subtract. The length is the dot product of a vector with itself. We will look at one more important vector later.
 }
 
 
 \subsection{Link to High School}
 
-Ok, so whats the point of all this? Everyone measures the same $ds^2$, woopdy doo. What can we do with this? A better question is, what can't we do with this?. Just knowing equation \eqref{eq:ds} essentially gives you all of special relativity you've probably been taught. You can perform all length contraction and time dilations with it. Let me derive you're high school results to illustrate. 
+Ok, so whats the point of all this? Everyone measures the same $ds^2$, woopdy doo. What can we do with this? A better question is, what can't we do with this? Just knowing equation \eqref{eq:ds} essentially gives you all of special relativity you've probably been taught. You can perform all length contraction and time dilations with it. Let me derive you're high school results to illustrate. 
 
-Lets consider Mehdi, being lazy like he is. He sits at home on his couch and plays COD. Lets say he measures time with the variable, $\tau$. He starts at $\tau_0 = 0$ and after an hour finishes at time $\tau_1 = 1$hour. He doesn't move at all. So his $dx = dy = dz =0$ i.e there is no spacial displacement in the 4-vector which represents Mehdi starting and finishing playing COD. So for Mehdi, he would say the duration of him playing COD is $d\tau = \tau_1 - \tau_0 = 1$hour. He would measure the length of that 4-object as $ds^2 = - c^2 d\tau^2 + dx^2 + dy^2 + dz^2 = -c^2 d\tau^2$. Cool, pretty straight forward?. Lets just draw a picture to make sure its clear. 
+Lets consider Mehdi, being lazy like he is. He sits at home on his couch and plays COD. Lets say he measures time with the variable, $\tau$. He starts at $\tau_0 = 0$ and after an hour finishes at time $\tau_1 = 1$hour. He doesn't move at all. So his $dx = dy = dz =0$ i.e there is no spacial displacement in the 4-vector which represents Mehdi starting and finishing playing COD. So for Mehdi, he would say the duration of him playing COD is $d\tau = \tau_1 - \tau_0 = 1$hour. He would measure the length of that 4-object as $ds^2 = - c^2 d\tau^2 + dx^2 + dy^2 + dz^2 = -c^2 d\tau^2$. Cool, pretty straight forward? Lets just draw a picture to make sure its clear. 
 
 \begin{figure}[h]
   \centering
@@ -251,7 +251,7 @@ Lets consider Mehdi, being lazy like he is. He sits at home on his couch and pla
 \label{fig:M4d}
 \end{figure}
 
-So ok, lets compare his measurements with Luke. Luke has had to much coffee and is running at some velocity $v$ towards Mehdi (he wants to play games also, but is late, typical Luke). From Luke's perspective, Mehdi starts playing at $t_0 = 0$ and finishes at $t_1$ (some number). Now when Mehdi starts, Luke is some distance away (lets say in the x-direction), a distance $x_0$. When Mehdi finishes, Luke makes it to his house, so distance away is $x_1 =0$. So for Luke, the 4D object representing Mehdi starting and finishing playing COD has $dt = dt$ and $dx = x_1 - x_0 = x_1$. Again, let me draw a picture to show this. 
+So ok, lets compare his measurements with Luke. Luke has had to much coffee and is running at some velocity $v$ towards Mehdi (he wants to play games also, but is late, typical Luke). From Luke's perspective, Mehdi starts playing at $t_0 = 0$ and finishes at $t_1$ (some number). Now when Mehdi starts, Luke is some distance away (lets say in the x-direction), a distance $x_1$. When Mehdi finishes, Luke makes it to his house, so distance away is $x_0 =0$. So for Luke, the 4D object representing Mehdi starting and finishing playing COD has $dt = dt$ and $dx = x_1 - x_0 = x_1$. Again, let me draw a picture to show this. 
 
 \begin{figure}[h]
   \centering
@@ -305,9 +305,11 @@ I just invert both sides and multiply by $d\tau^2$ to get
   dt &= \frac{d \tau}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma(v) d\tau
 \end{aligned}
 \end{equation}
-This is your high school definition of time dilation (see Equation \eqref{eq:specialrel}). Physically it means that Luke's estimate of the duration of Mehdi playing COD, $dt$ is not the same as Mehdi's estimate, $d\tau$. In fact its longer depending on the velocity that Luke was travelling, $v$. Again, the length of the 4-object (Mehdi starting and finish playing COD) is the same for everyone, but the time and space that each person think (i.e the components of that 4-vector) are different!
+This is your high school definition of time dilation (see Equation \eqref{eq:specialrel}). Physically it means that Luke's estimate of the duration of Mehdi playing COD, $dt$ is not the same as Mehdi's estimate, $d\tau$. In fact its longer depending on the velocity that Luke was travelling, $v$. Again, the length of the 4-object (Mehdi starting and finish playing COD) is the same for everyone, but the time and space that each person think (i.e the components of that 4-vector) are different! \\
+A similar argument can be done for length contraction. \\
 
-A similar argument can be done for length contraction.
+This result, along with length contraction is a consequence of temporal dimensions contributing negatively to 4-lengths (Equation \eqref{eq:ds}).
+
 
 \subsection{Some more 4-Vectors}
 So now that we know we need to start including time with all our calculations. All of our known vectors need to be extended to 4-vectors. 
@@ -367,7 +369,7 @@ Ok, but look at equation \eqref{eq:u0}. Specifically, invert it and take the squ
 \begin{equation}
   \frac{dt}{d\tau} = \frac{1}{\sqrt{1  - \frac{v^2}{c^2}}}
 \end{equation}
-We use this and that gives us
+Using this, we can write $P^0$ as
 
 \begin{equation}
   P^0 = m \frac{dt}{d\tau} = m \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} 
@@ -376,10 +378,10 @@ So what? Can you see what this quantity means yet? \\
 Lets use that binomial expansion at the start (equation \eqref{eq:binom}) and expand that fraction. 
 
 \begin{equation}
-  P^0 = m \frac{dt}{d\tau} = m \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} = m + \frac{1}{2} m \frac{v^2}{c^2} + \cdots = \frac{1}{c^2} (m c^2 + \frac{1}{2}m v^2)
+  P^0 = m \frac{dt}{d\tau} = m \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} = m + \frac{1}{2} m \frac{v^2}{c^2} + \cdots = \frac{1}{c^2} (m c^2 + \frac{1}{2}m v^2 + \cdots)
 \end{equation}
 
-Wait second. Doesn't that second term look exactly like the kinetic energy of an object? So what have we got here?. When an object is moving, $c^2 P^0$ represents its kinetic energy, when its not moving $c^2 P^0 = m c^2$. So $P^0$ actually represents the energy of an object, ie $P^0 = \frac{E}{c^2}$ and strangely it tells us that for an object thats not moving, it has some intrinsic energy, namely $E = m c^2$. 
+Wait second. Doesn't that second term look exactly like the kinetic energy of an object? So what have we got here? When an object is moving, $c^2 P^0$ represents its kinetic energy, when its not moving $c^2 P^0 = m c^2$. So $P^0$ actually represents the energy of an object, ie $P^0 = \frac{E}{c^2}$ and strangely it tells us that for an object thats not moving, it has some intrinsic energy, namely $E = m c^2$. 
 
 So we typically write the 4-momentum as
 \begin{equation}
@@ -400,7 +402,7 @@ It is
     \end{aligned}
     \label{eq:p2}
 \end{equation}
-where we have used equation \eqref{eq:Ulength} in the second line. Lets stop and think about this for a second. The invariant of the 4-momentum is mass of the object. So measuring mass is the same in all reference frames. There is no such thing as mass dilation! Mass is the scalar invariant of 4-momentum. 
+where we have used equation \eqref{eq:Ulength} in the second line. Lets stop and think about this for a second. The invariant of the 4-momentum is the mass of the object. So the mass of an object is the same in all reference frames. There is no such thing as mass dilation! Mass is the scalar invariant of 4-momentum. 
 
 We can calculate the length another way using the same method we did for the 4-velocity. Instead of equation \eqref{eq:4length} we exclude the c-factor\footnote{I should introduce c consistently earlier on}. Specifically we use
 
@@ -422,7 +424,7 @@ Re-arranging gives
 
 This is the correct and general version of Einsteins energy-mass relation. You'll notice if an object is at rest, it has no 3-velocity, and hence no 3-momentum and we recover $E^2 = m c^2$.
 
-Now we can all walk around knowing the origin of the energy-mass relation. 
+Now we can all walk around knowing the origin of the energy-mass relation. It comes from the time-component of the 4-momentum and the invariant length of 4-momentum in all inertial reference frames. I spose you could even think of Energy as being defined at the time-component of 4-momentum. 
 
 \abox{\textbf{Detour - Massless Particles} \\ In early physics, people often ask the question, how can light have momentum, when it has no mass? Well now we know. Light, or photons can have 0 mass but their 4-momentum is not 0. Specifically, the time-component of their 4-momentum is the energy of the photon, typically $hf$. As this is just a single component of a vector, we know that different reference frames will measure different values for this component. This is the origin of the Doppler shift. A person travelling toward a light source will see a higher frequency, or a different time-component of the 4-momentum the same way an observer sees a different time of an event than someone at rest with respect to that event.}
 
