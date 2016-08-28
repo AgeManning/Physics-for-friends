@@ -40,6 +40,21 @@ Optional topics I may make lectures on, depending on interest are
 
 \section{Lecture 1 - SR Overview}
 
+\subsection{Vector Notation}
+Before jumping into prerequisites, I'll be nice and introduce the vector notation that I will be using more slowly. We will be dealing with 3-vectors and 4-vectors (which I had intended on explaining what these are later). Essentially a 3-vector is a vector with 3-components and a 4-vector is a vector with 4-components. 
+
+3-Vectors are represented with Latin indices, i.e $i,j,l,m$ etc. The three components correspond to the three-spatial dimensions, i.e $x,y,z$ directions, or more simply, left-right, up-down,back-forward. The following notation is used interchangeably. 
+
+\begin{equation}
+  x^i = \mathbf{x} = (x,y,z) = (x^1, x^2,x^3)
+\end{equation}
+
+Similarly, a 4-vector can be represented in a number of ways. We use greek indices to represent the 4 components, i.e $\mu,\nu,\rho,\sigma,\lambda$ etc. The extra-component (relative to a 3-vector) represents the temporal dimension, or time. By the end of this lecture, hopefully you will realise we live in a 4-dimensional world, not a 3 dimensional one. The following notation for 4-vectors is used
+
+\begin{equation}
+  x^\mu =  (t,x,y,z) = (x^0,x^1, x^2,x^3)
+\end{equation}
+
 \subsection{Prerequisites}
 
 In order to go over SR, you need to at least know these following things. 
@@ -55,11 +70,9 @@ it is like the energy of motion. Important to recognize it as an energy, which i
 Momentum. 
 
 \begin{equation}
-  \mathbf{P} = m \mathbf{v}
+  \mathbf{p} = m \mathbf{v}
 \end{equation}
 momentum is a vector quantity. It has direction. The bold face represents this. I suppose its obvious, but you need to know what a vector is and what a scalar is. Momentum essentially gives the velocity that a particle is moving and hence it requires a direction. 
-
-Typically vectors, in 3-Dimensions have 3 components. i.e $x^i = (x_0 , x_1, x_2)$ where the 1,2,3 correspond to the x,y,z directions in 3 space. Notice the latin indices used to represent this. 
 
 \subsubsection{High-School Special Rel}
 
@@ -181,7 +194,7 @@ Consider our same pencil. It starts of yellow, then Mehdi comes along later at t
 So now that we are dealing with 4D objects, we need to extend our notation. The vectors we all know and love, we will now call 3-vectors (i.e 3 space vectors) and we put those aside and continue to work with 4-vectors now. A 4-vector is a vector with 4 components. Here is some common notation. 
 
 \begin{equation}
-  x^\mu = (x_t, x^i) = (x_t, x_x, x_y, x_z) = (x^0, x^1, x^2, x^3)
+  x^\mu = (x^t, x^i) = (x^t, x^x, x^y, x^z) = (x^0, x^1, x^2, x^3)
 \end{equation}
 
 Things to note. Greek indicies represent the range from 0-3, i.e 4-components. The 0'th component is the time component. The 1st component is x-component, the second is y-component and third is the z-component. Notice again the latin indices represents 1 to 3, i.e $x^i = (x^1, x^2, x^3)$ and represents our usual 3 vector. \textbf{Important:} The indicies do not represent powers, but a labelling. \\
@@ -243,7 +256,7 @@ Lets consider Mehdi, being lazy like he is. He sits at home on his couch and pla
 %draw guide lines to components
 \draw[vector] (0,0) -- (0,0.75);
 \draw (0,0.75) node[anchor=east,blue] {$\tau_1$};
-\draw (0,0.5) node[anchor=west,blue] {$ds^2 = -c^2 d\tau$};
+\draw (0,0.5) node[anchor=west,blue] {$ds^2 = -c^2 d\tau^2$};
 \draw (0,0) node[anchor=north,blue] {$\tau_0$};
 
 \end{tikzpicture}
@@ -272,7 +285,7 @@ So ok, lets compare his measurements with Luke. Luke has had to much coffee and 
 \draw[vector] (0.75,0) -- (0,0.75);
 \draw (0.75,0) node[anchor=north,blue] {$x_1$};
 \draw (0,0.75) node[anchor=east,blue] {$t_1$};
-\draw (0.3,0.5) node[anchor=west,blue] {$ds^2 = -c^2 dt + dx^2$};
+\draw (0.3,0.5) node[anchor=west,blue] {$ds^2 = -c^2 dt^2 + dx^2$};
 \draw (0,0) node[anchor=north,blue] {$t_0, x_0$};
 
 \end{tikzpicture}
@@ -303,6 +316,7 @@ I just invert both sides and multiply by $d\tau^2$ to get
   \begin{aligned}
   dt^2 &= d\tau^2 \frac{1}{1  - \frac{v^2}{c^2}} \\
   dt &= \frac{d \tau}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma(v) d\tau
+  \label{eq:dtgamma}
 \end{aligned}
 \end{equation}
 This is your high school definition of time dilation (see Equation \eqref{eq:specialrel}). Physically it means that Luke's estimate of the duration of Mehdi playing COD, $dt$ is not the same as Mehdi's estimate, $d\tau$. In fact its longer depending on the velocity that Luke was travelling, $v$. Again, the length of the 4-object (Mehdi starting and finish playing COD) is the same for everyone, but the time and space that each person think (i.e the components of that 4-vector) are different! \\
@@ -320,10 +334,16 @@ We have looked at a standard position 4-vector, $x^\mu$ which just represents th
 The velocity 4-Vector, which we will denote, $U^\mu = (U^0, U^1, U^2, U^3)$, as you would expect, represents the velocity of some object/person/event. So with normal 3-vectors, we can calculate the velocity as distance/time. i.e $v^i = \frac{dx^i}{dt}$. Now in our 4-notation our problem is what time to we divide by? We are going to use the proper time, $d\tau$. So lets introduce the 4-velocity and look at some of its properties. 
 
 \begin{equation}
-  U^\mu = (U^0, U^1, U^2, U^3) = (\frac{dx^0}{d\tau}, \frac{dx^1}{d\tau},\frac{dx^2}{d\tau},\frac{dx^3}{d\tau}) = (\frac{dt}{d\tau}, \frac{dx}{d\tau},\frac{dy}{d\tau},\frac{dz}{d\tau}) = (\frac{dt}{d\tau}, v^i)
+  U^\mu = (U^0, U^1, U^2, U^3) = (\frac{dx^0}{d\tau}, \frac{dx^1}{d\tau},\frac{dx^2}{d\tau},\frac{dx^3}{d\tau}) = (\frac{dt}{d\tau}, \frac{dx}{d\tau},\frac{dy}{d\tau},\frac{dz}{d\tau}) = (\frac{dt}{d\tau}, \gamma(v) v^i)
 \end{equation}
 
-Firstly, what the hell is the meaning of the velocity in the time direction? It is the rate at which an object is travelling through time, like the 3-velocity is of an object travelling through space. Let me explain with an example. Consider again, lazy Mehdi on his couch. Recall the 4-vector of him playing COD over an hour. It looked like this:
+Some important notes for the last equality. If you look at \eqref{eq:dtgamma} not that we can write $dt/d\tau = \gamma$. So we can do the following
+\begin{equation}
+  \frac{dx}{d\tau} = \frac{dx}{dt} \frac{dt}{d\tau} = \frac{dx}{dt} \gamma(v) = v^1 \gamma(v)
+\end{equation}
+which is what I have done to obtain the last equality.
+
+Now a few things, what the hell is the meaning of the velocity in the time direction? It is the rate at which an object is travelling through time, like the 3-velocity is of an object travelling through space. Let me explain with an example. Consider again, lazy Mehdi on his couch. Recall the 4-vector of him playing COD over an hour. It looked like this:
 \begin{equation}
   x^\mu = (d\tau, 0,0,0) 
 \end{equation}
@@ -351,12 +371,14 @@ As this is the case with all observers, the length of any 4-velocity of people o
 
 
 \subsubsection{Momentum 4-Vector}
-Recall our usual momentum $\mathbf{P} = m \mathbf{v}$. Can you think of how we can extend this 3-momentum into a 4-vector? \\
+Recall our usual momentum $\mathbf{p} = m \mathbf{v}$. Can you think of how we can extend this 3-momentum into a 4-vector? \\
 
 Simply replace the 3-velocity $\mathbf{v}$ with the 4-velocity, $U^\mu$. Then we have our 4-momentum
 \begin{equation}
-  P^\mu = m U^\mu = m (\frac{dx^0}{d\tau}, \frac{dx^1}{d\tau},\frac{dx^2}{d\tau},\frac{dx^3}{d\tau}) = (m \frac{dt}{d\tau},m v^i)
+  P^\mu = m U^\mu = m (\frac{dx^0}{d\tau}, \frac{dx^1}{d\tau},\frac{dx^2}{d\tau},\frac{dx^3}{d\tau}) = (m \frac{dt}{d\tau},\gamma(v) m  v^i)
 \end{equation}
+
+For the astute physicists who remember high-school physics, you'll notice the gamma factor in the 3-momentum. This is momentum dilation in special relativity. :)
 
 So again, we are used to 3-vectors, what the hell is the time-component of momentum, $P^0$?!?. What does it physically mean, if anything?. 
 
@@ -372,7 +394,7 @@ Ok, but look at equation \eqref{eq:u0}. Specifically, invert it and take the squ
 Using this, we can write $P^0$ as
 
 \begin{equation}
-  P^0 = m \frac{dt}{d\tau} = m \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} 
+  P^0 = m \frac{dt}{d\tau} = m \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}  = m\gamma(v)
 \end{equation}
 So what? Can you see what this quantity means yet? \\
 Lets use that binomial expansion at the start (equation \eqref{eq:binom}) and expand that fraction. 
@@ -385,7 +407,7 @@ Wait second. Doesn't that second term look exactly like the kinetic energy of an
 
 So we typically write the 4-momentum as
 \begin{equation}
-  P^\mu = (P^0, P^1, P^2, P^3) = (\frac{E}{c}, P^i)
+  P^\mu = (P^0, P^1, P^2, P^3) = (\frac{E}{c^2}, P^i)
   \label{eq:4P}
 \end{equation}
 
